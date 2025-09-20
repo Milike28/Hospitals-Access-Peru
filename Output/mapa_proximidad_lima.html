@@ -1,0 +1,1851 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_63d735a55c33f96d07cb2b6af21b2c9b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_63d735a55c33f96d07cb2b6af21b2c9b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_63d735a55c33f96d07cb2b6af21b2c9b = L.map(
+                "map_63d735a55c33f96d07cb2b6af21b2c9b",
+                {
+                    center: [-11.947561792619048, -77.04569317833334],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3e5420b873a68a39d9a0b73674e16709 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3e5420b873a68a39d9a0b73674e16709.addTo(map_63d735a55c33f96d07cb2b6af21b2c9b);
+        
+    
+            var circle_cc43051db682fad0b91ef1a71a2a70c9 = L.circle(
+                [-11.9344473, -76.693699],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 2}
+            ).addTo(map_63d735a55c33f96d07cb2b6af21b2c9b);
+        
+    
+        var popup_381d9a0e57fce09568bbb1ade2e7adb1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e793e9bcbc7640b5251941b992142e89 = $(`<div id="html_e793e9bcbc7640b5251941b992142e89" style="width: 100.0%; height: 100.0%;"><b>Zona Aislada</b><br>Distrito: LURIGANCHO<br>Hospitales en 10km: 1</div>`)[0];
+                popup_381d9a0e57fce09568bbb1ade2e7adb1.setContent(html_e793e9bcbc7640b5251941b992142e89);
+            
+        
+
+        circle_cc43051db682fad0b91ef1a71a2a70c9.bindPopup(popup_381d9a0e57fce09568bbb1ade2e7adb1)
+        ;
+
+        
+    
+    
+            var circle_1caec6b7fe6b845a6fcf1f280614ff84 = L.circle(
+                [-12.05204634, -77.03530002],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 2}
+            ).addTo(map_63d735a55c33f96d07cb2b6af21b2c9b);
+        
+    
+        var popup_2ac6e062dce4dcd794ce86725727c12e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a41affb3ff9b00cd16ecea5d925b0534 = $(`<div id="html_a41affb3ff9b00cd16ecea5d925b0534" style="width: 100.0%; height: 100.0%;"><b>Zona Concentrada</b><br>Distrito: LIMA<br>Hospitales en 10km: 20</div>`)[0];
+                popup_2ac6e062dce4dcd794ce86725727c12e.setContent(html_a41affb3ff9b00cd16ecea5d925b0534);
+            
+        
+
+        circle_1caec6b7fe6b845a6fcf1f280614ff84.bindPopup(popup_2ac6e062dce4dcd794ce86725727c12e)
+        ;
+
+        
+    
+    
+            var marker_5cb052dfc2c6ce65e37a5380a459ab7b = L.marker(
+                [-11.9344473, -76.693699],
+                {
+}
+            ).addTo(map_63d735a55c33f96d07cb2b6af21b2c9b);
+        
+    
+            var icon_fab67244bc27ade73e7fc783b1f62447 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2aec62a001e1f358d422b7a0c7bd1ddb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_91656ab673f578a3a2350ed855822310 = $(`<div id="html_91656ab673f578a3a2350ed855822310" style="width: 100.0%; height: 100.0%;"><b>Zona Aislada</b><br>LURIGANCHO</div>`)[0];
+                popup_2aec62a001e1f358d422b7a0c7bd1ddb.setContent(html_91656ab673f578a3a2350ed855822310);
+            
+        
+
+        marker_5cb052dfc2c6ce65e37a5380a459ab7b.bindPopup(popup_2aec62a001e1f358d422b7a0c7bd1ddb)
+        ;
+
+        
+    
+    
+                marker_5cb052dfc2c6ce65e37a5380a459ab7b.setIcon(icon_fab67244bc27ade73e7fc783b1f62447);
+            
+    
+            var marker_906ba26ffd1421c4e28c2271ced5f51b = L.marker(
+                [-12.05204634, -77.03530002],
+                {
+}
+            ).addTo(map_63d735a55c33f96d07cb2b6af21b2c9b);
+        
+    
+            var icon_08261e14816f4583952bb1c720a92f2e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1a7703e13848b81a50cd1a2b0c268615 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8a11d88852b349e142c92f863563a79b = $(`<div id="html_8a11d88852b349e142c92f863563a79b" style="width: 100.0%; height: 100.0%;"><b>Zona Concentrada</b><br>LIMA</div>`)[0];
+                popup_1a7703e13848b81a50cd1a2b0c268615.setContent(html_8a11d88852b349e142c92f863563a79b);
+            
+        
+
+        marker_906ba26ffd1421c4e28c2271ced5f51b.bindPopup(popup_1a7703e13848b81a50cd1a2b0c268615)
+        ;
+
+        
+    
+    
+                marker_906ba26ffd1421c4e28c2271ced5f51b.setIcon(icon_08261e14816f4583952bb1c720a92f2e);
+            
+    
+            var marker_cluster_13374a5f37164c3ce3dc923a453e76f4 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_54458894e086697369fc88648c730131 = L.marker(
+                [-12.1605768, -76.9591024],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_c552704f502efc855aeb694b98cde218 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_adebbae289827e3b79c96efdce5d499a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d9d39027028bc70bad929b07d1dcbcf = $(`<div id="html_3d9d39027028bc70bad929b07d1dcbcf" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL MARIA AUXILIADORA</b><br>Distrito: SAN JUAN DE MIRAFLORES<br>Institución: MINSA</div>`)[0];
+                popup_adebbae289827e3b79c96efdce5d499a.setContent(html_3d9d39027028bc70bad929b07d1dcbcf);
+            
+        
+
+        marker_54458894e086697369fc88648c730131.bindPopup(popup_adebbae289827e3b79c96efdce5d499a)
+        ;
+
+        
+    
+    
+                marker_54458894e086697369fc88648c730131.setIcon(icon_c552704f502efc855aeb694b98cde218);
+            
+    
+            var marker_b9ce0eb538e8b2f1928adc7369e620c6 = L.marker(
+                [-11.9138337, -77.0395181],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_68373286c29893b804c9ebc013246800 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79e6852495f6e441cb9bbe8552ee9731 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a700b4e6fbe0d999edc6dca17cc8c785 = $(`<div id="html_a700b4e6fbe0d999edc6dca17cc8c785" style="width: 100.0%; height: 100.0%;"><b>NACIONAL SERGIO E. BERNALES</b><br>Distrito: COMAS<br>Institución: MINSA</div>`)[0];
+                popup_79e6852495f6e441cb9bbe8552ee9731.setContent(html_a700b4e6fbe0d999edc6dca17cc8c785);
+            
+        
+
+        marker_b9ce0eb538e8b2f1928adc7369e620c6.bindPopup(popup_79e6852495f6e441cb9bbe8552ee9731)
+        ;
+
+        
+    
+    
+                marker_b9ce0eb538e8b2f1928adc7369e620c6.setIcon(icon_68373286c29893b804c9ebc013246800);
+            
+    
+            var marker_c94e213e62f5c43cdfc7ae15944854fb = L.marker(
+                [-11.9684779, -76.9955667],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_73422a503ace4909f174f0e8e0fbda88 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f57cbe57e935c8691fd94bbca82ecd70 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c9fe523da9585463db4b3705863af4d = $(`<div id="html_1c9fe523da9585463db4b3705863af4d" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL AURELIO DIAZ UFANO Y PERAL</b><br>Distrito: SAN JUAN DE LURIGANCHO<br>Institución: ESSALUD</div>`)[0];
+                popup_f57cbe57e935c8691fd94bbca82ecd70.setContent(html_1c9fe523da9585463db4b3705863af4d);
+            
+        
+
+        marker_c94e213e62f5c43cdfc7ae15944854fb.bindPopup(popup_f57cbe57e935c8691fd94bbca82ecd70)
+        ;
+
+        
+    
+    
+                marker_c94e213e62f5c43cdfc7ae15944854fb.setIcon(icon_73422a503ace4909f174f0e8e0fbda88);
+            
+    
+            var marker_743f49c6ccd137e67f0e428733ecba5b = L.marker(
+                [-11.97723, -77.0656159],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_d63787c5376948492ccf09acbd542006 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9fbbe64371dbda5571f9e6319d1441ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0419f68731c49570db8ccd1e3803ea6f = $(`<div id="html_0419f68731c49570db8ccd1e3803ea6f" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL MUNICIPAL LOS OLIVOS</b><br>Distrito: LOS OLIVOS<br>Institución: MUNICIPALIDAD DISTRITAL</div>`)[0];
+                popup_9fbbe64371dbda5571f9e6319d1441ae.setContent(html_0419f68731c49570db8ccd1e3803ea6f);
+            
+        
+
+        marker_743f49c6ccd137e67f0e428733ecba5b.bindPopup(popup_9fbbe64371dbda5571f9e6319d1441ae)
+        ;
+
+        
+    
+    
+                marker_743f49c6ccd137e67f0e428733ecba5b.setIcon(icon_d63787c5376948492ccf09acbd542006);
+            
+    
+            var marker_6dd1e50e0511d05a05cbf7e66381d777 = L.marker(
+                [-12.0871197, -77.0619786],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_2e67322a0d234f2a4482ab359cef4317 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bff976ac0dcaf0436f2c2bc3a9ecbbc1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d227b5c6c5e9365f2f5c7c99fa48ab0 = $(`<div id="html_4d227b5c6c5e9365f2f5c7c99fa48ab0" style="width: 100.0%; height: 100.0%;"><b>LUIS ARIAS SCHEREIBER - HOSPITAL MILITAR CENTRAL</b><br>Distrito: JESUS MARIA<br>Institución: SANIDAD DEL EJERCITO DEL PERU</div>`)[0];
+                popup_bff976ac0dcaf0436f2c2bc3a9ecbbc1.setContent(html_4d227b5c6c5e9365f2f5c7c99fa48ab0);
+            
+        
+
+        marker_6dd1e50e0511d05a05cbf7e66381d777.bindPopup(popup_bff976ac0dcaf0436f2c2bc3a9ecbbc1)
+        ;
+
+        
+    
+    
+                marker_6dd1e50e0511d05a05cbf7e66381d777.setIcon(icon_2e67322a0d234f2a4482ab359cef4317);
+            
+    
+            var marker_023a3d890e7c7cb78891ad4820d17fe2 = L.marker(
+                [-11.9438086, -77.058242],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_ee13f80f2d260431f834307e018e210e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d9f186817a6d0421b2976631f5456d8f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62c99c6236e3daae92ac5a26033033fd = $(`<div id="html_62c99c6236e3daae92ac5a26033033fd" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL I MARINO MOLINA SCIPPA</b><br>Distrito: COMAS<br>Institución: ESSALUD</div>`)[0];
+                popup_d9f186817a6d0421b2976631f5456d8f.setContent(html_62c99c6236e3daae92ac5a26033033fd);
+            
+        
+
+        marker_023a3d890e7c7cb78891ad4820d17fe2.bindPopup(popup_d9f186817a6d0421b2976631f5456d8f)
+        ;
+
+        
+    
+    
+                marker_023a3d890e7c7cb78891ad4820d17fe2.setIcon(icon_ee13f80f2d260431f834307e018e210e);
+            
+    
+            var marker_4ec2fb1d080535363acf754354ee66a1 = L.marker(
+                [-12.04757833, -76.947995],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_65c8b55c3ae0b3eddaac1d2fca5913ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6838bd985ad75dec9582e48eee2f920e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e27ea4b219f22b71f55812ec1181e623 = $(`<div id="html_e27ea4b219f22b71f55812ec1181e623" style="width: 100.0%; height: 100.0%;"><b>SEGURO SOCIAL DE SALUD - ESSALUD</b><br>Distrito: SANTA ANITA<br>Institución: ESSALUD</div>`)[0];
+                popup_6838bd985ad75dec9582e48eee2f920e.setContent(html_e27ea4b219f22b71f55812ec1181e623);
+            
+        
+
+        marker_4ec2fb1d080535363acf754354ee66a1.bindPopup(popup_6838bd985ad75dec9582e48eee2f920e)
+        ;
+
+        
+    
+    
+                marker_4ec2fb1d080535363acf754354ee66a1.setIcon(icon_65c8b55c3ae0b3eddaac1d2fca5913ec);
+            
+    
+            var marker_d9ea4039081588ed6f9fc0586138c4f8 = L.marker(
+                [-12.1782885, -76.9405994],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_729eac48693da2d491d5dbbc636a2be1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_37335fa336ab1e90657d780789e43018 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c75a14cb11d8f8ffc19852ddbee55e39 = $(`<div id="html_c75a14cb11d8f8ffc19852ddbee55e39" style="width: 100.0%; height: 100.0%;"><b>GUILLERMO KAELIN  DE LA FUENTE</b><br>Distrito: VILLA MARIA DEL TRIUNFO<br>Institución: ESSALUD</div>`)[0];
+                popup_37335fa336ab1e90657d780789e43018.setContent(html_c75a14cb11d8f8ffc19852ddbee55e39);
+            
+        
+
+        marker_d9ea4039081588ed6f9fc0586138c4f8.bindPopup(popup_37335fa336ab1e90657d780789e43018)
+        ;
+
+        
+    
+    
+                marker_d9ea4039081588ed6f9fc0586138c4f8.setIcon(icon_729eac48693da2d491d5dbbc636a2be1);
+            
+    
+            var marker_02f307c34dfbe1e0b8bef01c0b07bdd7 = L.marker(
+                [-10.75433068, -77.76436841],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_625ef0ca793c7f79b297d78c1019634f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a07649f55ef2c56a306bc2b0e7a36e7c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eae2055d1579de0b3b0e57551a0d4a7b = $(`<div id="html_eae2055d1579de0b3b0e57551a0d4a7b" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL DE BARRANCA</b><br>Distrito: BARRANCA<br>Institución: GOBIERNO REGIONAL</div>`)[0];
+                popup_a07649f55ef2c56a306bc2b0e7a36e7c.setContent(html_eae2055d1579de0b3b0e57551a0d4a7b);
+            
+        
+
+        marker_02f307c34dfbe1e0b8bef01c0b07bdd7.bindPopup(popup_a07649f55ef2c56a306bc2b0e7a36e7c)
+        ;
+
+        
+    
+    
+                marker_02f307c34dfbe1e0b8bef01c0b07bdd7.setIcon(icon_625ef0ca793c7f79b297d78c1019634f);
+            
+    
+            var marker_72f4c3732a4921028bebac338fc102d0 = L.marker(
+                [-12.0443408, -77.0440331],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_d740b6d4c4d12bc7ec34421aa0fc5bdf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_68dd8b41b6bad0e8b3fcb11995dfd328 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1011aea20a06ed7a2046784f3a806c4 = $(`<div id="html_d1011aea20a06ed7a2046784f3a806c4" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL II RAMÓN CASTILLA</b><br>Distrito: LIMA<br>Institución: ESSALUD</div>`)[0];
+                popup_68dd8b41b6bad0e8b3fcb11995dfd328.setContent(html_d1011aea20a06ed7a2046784f3a806c4);
+            
+        
+
+        marker_72f4c3732a4921028bebac338fc102d0.bindPopup(popup_68dd8b41b6bad0e8b3fcb11995dfd328)
+        ;
+
+        
+    
+    
+                marker_72f4c3732a4921028bebac338fc102d0.setIcon(icon_d740b6d4c4d12bc7ec34421aa0fc5bdf);
+            
+    
+            var marker_ceb8f016fbaca87a0d04b9dcf5906bdb = L.marker(
+                [-12.0589571, -77.0312779],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_5a4dab57c8f0c7fb968b9c991091c93f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_34c8bcc86efbf20c0e5236921e8661ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5be9b5c33397a9c1f23755a8410004cf = $(`<div id="html_5be9b5c33397a9c1f23755a8410004cf" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL III EMERGENCIAS GRAU</b><br>Distrito: LIMA<br>Institución: ESSALUD</div>`)[0];
+                popup_34c8bcc86efbf20c0e5236921e8661ac.setContent(html_5be9b5c33397a9c1f23755a8410004cf);
+            
+        
+
+        marker_ceb8f016fbaca87a0d04b9dcf5906bdb.bindPopup(popup_34c8bcc86efbf20c0e5236921e8661ac)
+        ;
+
+        
+    
+    
+                marker_ceb8f016fbaca87a0d04b9dcf5906bdb.setIcon(icon_5a4dab57c8f0c7fb968b9c991091c93f);
+            
+    
+            var marker_e53d740ef9438a43392be8e5b1b50eb4 = L.marker(
+                [-12.0571705, -77.0162686],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_bc5192d22eae175e45de39f7aea13ffe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c510a8cb00f4eaffef65b48fca46dfcf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5cb88aed9696864910cf4b2f92a31a9 = $(`<div id="html_e5cb88aed9696864910cf4b2f92a31a9" style="width: 100.0%; height: 100.0%;"><b>NACIONAL  DOS DE MAYO</b><br>Distrito: LIMA<br>Institución: MINSA</div>`)[0];
+                popup_c510a8cb00f4eaffef65b48fca46dfcf.setContent(html_e5cb88aed9696864910cf4b2f92a31a9);
+            
+        
+
+        marker_e53d740ef9438a43392be8e5b1b50eb4.bindPopup(popup_c510a8cb00f4eaffef65b48fca46dfcf)
+        ;
+
+        
+    
+    
+                marker_e53d740ef9438a43392be8e5b1b50eb4.setIcon(icon_bc5192d22eae175e45de39f7aea13ffe);
+            
+    
+            var marker_5e5dc6d81b3fe1890e1e419fe282ed0a = L.marker(
+                [-12.0158889, -76.8201183],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_42c93f78402de83d7d1d2b4ac5f47716 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1be3a7b0bc07ea7791fefb6eaa35487a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf98a7c6fe70c66e951af21391ae7309 = $(`<div id="html_cf98a7c6fe70c66e951af21391ae7309" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL DE BAJA COMPLEJIDAD HUAYCAN</b><br>Distrito: ATE<br>Institución: MINSA</div>`)[0];
+                popup_1be3a7b0bc07ea7791fefb6eaa35487a.setContent(html_cf98a7c6fe70c66e951af21391ae7309);
+            
+        
+
+        marker_5e5dc6d81b3fe1890e1e419fe282ed0a.bindPopup(popup_1be3a7b0bc07ea7791fefb6eaa35487a)
+        ;
+
+        
+    
+    
+                marker_5e5dc6d81b3fe1890e1e419fe282ed0a.setIcon(icon_42c93f78402de83d7d1d2b4ac5f47716);
+            
+    
+            var marker_4b0a8890bc7cea8e278619f1ff1b9758 = L.marker(
+                [-12.062131, -76.9455439],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_2e049edb26874d980fe436179098e266 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_efcda1c0c07dfb6ed58f5fec250cd0af = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_445415247812dd994c35cee0df6c124d = $(`<div id="html_445415247812dd994c35cee0df6c124d" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL I CARLOS ALCANTARA BUTTERFIELD</b><br>Distrito: LA MOLINA<br>Institución: ESSALUD</div>`)[0];
+                popup_efcda1c0c07dfb6ed58f5fec250cd0af.setContent(html_445415247812dd994c35cee0df6c124d);
+            
+        
+
+        marker_4b0a8890bc7cea8e278619f1ff1b9758.bindPopup(popup_efcda1c0c07dfb6ed58f5fec250cd0af)
+        ;
+
+        
+    
+    
+                marker_4b0a8890bc7cea8e278619f1ff1b9758.setIcon(icon_2e049edb26874d980fe436179098e266);
+            
+    
+            var marker_d597f701f1e11adacdf91d003df60f88 = L.marker(
+                [-12.2107672, -76.9319845],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_81af4126a9173cb0208e82bd3a63dda1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2bc9be7dfd3e1522015d15afac658de9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7bb0f2c7d5e2b8a2f962f624638f60a6 = $(`<div id="html_7bb0f2c7d5e2b8a2f962f624638f60a6" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL I ULDARICO ROCCA FERNANDEZ</b><br>Distrito: VILLA EL SALVADOR<br>Institución: ESSALUD</div>`)[0];
+                popup_2bc9be7dfd3e1522015d15afac658de9.setContent(html_7bb0f2c7d5e2b8a2f962f624638f60a6);
+            
+        
+
+        marker_d597f701f1e11adacdf91d003df60f88.bindPopup(popup_2bc9be7dfd3e1522015d15afac658de9)
+        ;
+
+        
+    
+    
+                marker_d597f701f1e11adacdf91d003df60f88.setIcon(icon_81af4126a9173cb0208e82bd3a63dda1);
+            
+    
+            var marker_60f4104d1295c8ac11589b7a795ae0bf = L.marker(
+                [-12.098705, -77.065756],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_c44277174d5a59407bad3ebc74a91958 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b67650d96b38429b5a49567a135e34f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c57df1dfbd428287b434b6d8039098a = $(`<div id="html_4c57df1dfbd428287b434b6d8039098a" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL VICTOR LARCO HERRERA</b><br>Distrito: MAGDALENA DEL MAR<br>Institución: MINSA</div>`)[0];
+                popup_b67650d96b38429b5a49567a135e34f4.setContent(html_4c57df1dfbd428287b434b6d8039098a);
+            
+        
+
+        marker_60f4104d1295c8ac11589b7a795ae0bf.bindPopup(popup_b67650d96b38429b5a49567a135e34f4)
+        ;
+
+        
+    
+    
+                marker_60f4104d1295c8ac11589b7a795ae0bf.setIcon(icon_c44277174d5a59407bad3ebc74a91958);
+            
+    
+            var marker_adf84ca988c7e785fbec05f5dc169570 = L.marker(
+                [-12.0498454, -77.0425597],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_147a84ba8b242f23ff25d56affa83362 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08b61a4e95f26d102347af47d1f3c84c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe6473944c6093db829bfd7b3e9cc449 = $(`<div id="html_fe6473944c6093db829bfd7b3e9cc449" style="width: 100.0%; height: 100.0%;"><b>NACIONAL ARZOBISPO LOAYZA</b><br>Distrito: LIMA<br>Institución: MINSA</div>`)[0];
+                popup_08b61a4e95f26d102347af47d1f3c84c.setContent(html_fe6473944c6093db829bfd7b3e9cc449);
+            
+        
+
+        marker_adf84ca988c7e785fbec05f5dc169570.bindPopup(popup_08b61a4e95f26d102347af47d1f3c84c)
+        ;
+
+        
+    
+    
+                marker_adf84ca988c7e785fbec05f5dc169570.setIcon(icon_147a84ba8b242f23ff25d56affa83362);
+            
+    
+            var marker_b3771c9022529193be0d6409704d2105 = L.marker(
+                [-12.1136234, -77.0279933],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_d98b33dc2909d6fa1425abda494f0be4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55a6af8242b1c3dde682696864fea692 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20b565713595fd6e6b821056aad7deeb = $(`<div id="html_20b565713595fd6e6b821056aad7deeb" style="width: 100.0%; height: 100.0%;"><b>ESSALUD - HOSPITAL II SUÁREZ ANGAMOS</b><br>Distrito: MIRAFLORES<br>Institución: ESSALUD</div>`)[0];
+                popup_55a6af8242b1c3dde682696864fea692.setContent(html_20b565713595fd6e6b821056aad7deeb);
+            
+        
+
+        marker_b3771c9022529193be0d6409704d2105.bindPopup(popup_55a6af8242b1c3dde682696864fea692)
+        ;
+
+        
+    
+    
+                marker_b3771c9022529193be0d6409704d2105.setIcon(icon_d98b33dc2909d6fa1425abda494f0be4);
+            
+    
+            var marker_8f216f7ec7ce4087649889b3e6d18435 = L.marker(
+                [-11.50329771, -77.21380309],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_27bed792d3a006759b5bb171e7687867 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b8626859129bf49286f9c0cd9dc779ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_115b1f8e70ba5823ba60a049d77b1bb1 = $(`<div id="html_115b1f8e70ba5823ba60a049d77b1bb1" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL SAN JUAN BAUTISTA HUARAL</b><br>Distrito: HUARAL<br>Institución: GOBIERNO REGIONAL</div>`)[0];
+                popup_b8626859129bf49286f9c0cd9dc779ab.setContent(html_115b1f8e70ba5823ba60a049d77b1bb1);
+            
+        
+
+        marker_8f216f7ec7ce4087649889b3e6d18435.bindPopup(popup_b8626859129bf49286f9c0cd9dc779ab)
+        ;
+
+        
+    
+    
+                marker_8f216f7ec7ce4087649889b3e6d18435.setIcon(icon_27bed792d3a006759b5bb171e7687867);
+            
+    
+            var marker_87deec142cd1fbadf90ee793cd2743fc = L.marker(
+                [-11.1133442, -77.6091848],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_9f95f2a0d7c0b663b2aa1fb35c1c4b3d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3002946ab40f42d5a0d97175976f2055 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_74689518c3d2c0717b22da3e1b58188c = $(`<div id="html_74689518c3d2c0717b22da3e1b58188c" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL II GUSTAVO LANATTA LUJAN - ESSALUD</b><br>Distrito: HUACHO<br>Institución: ESSALUD</div>`)[0];
+                popup_3002946ab40f42d5a0d97175976f2055.setContent(html_74689518c3d2c0717b22da3e1b58188c);
+            
+        
+
+        marker_87deec142cd1fbadf90ee793cd2743fc.bindPopup(popup_3002946ab40f42d5a0d97175976f2055)
+        ;
+
+        
+    
+    
+                marker_87deec142cd1fbadf90ee793cd2743fc.setIcon(icon_9f95f2a0d7c0b663b2aa1fb35c1c4b3d);
+            
+    
+            var marker_1e36269d7de562f005fe3b35ce1ffa3c = L.marker(
+                [-12.10342333, -77.029825],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_64ddb73eeb6658c772f362c312e712fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d64e4eb533f291a8fcd4e6e555b02d1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b42920fb9baf4afc6e0216cb7f268b7 = $(`<div id="html_3b42920fb9baf4afc6e0216cb7f268b7" style="width: 100.0%; height: 100.0%;"><b>FUERZA AEREA DEL PERU</b><br>Distrito: MIRAFLORES<br>Institución: SANIDAD DE LA FUERZA AEREA DEL PERU</div>`)[0];
+                popup_2d64e4eb533f291a8fcd4e6e555b02d1.setContent(html_3b42920fb9baf4afc6e0216cb7f268b7);
+            
+        
+
+        marker_1e36269d7de562f005fe3b35ce1ffa3c.bindPopup(popup_2d64e4eb533f291a8fcd4e6e555b02d1)
+        ;
+
+        
+    
+    
+                marker_1e36269d7de562f005fe3b35ce1ffa3c.setIcon(icon_64ddb73eeb6658c772f362c312e712fd);
+            
+    
+            var marker_e2f79274a7934644eaaa6bad1db30efe = L.marker(
+                [-11.8631805, -77.079335],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_de96d00cfe6adf58fe2211110b513d19 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0edcb55277faa749d4d1092e672273b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f770aee24c799a1b69f184abcb9f4da9 = $(`<div id="html_f770aee24c799a1b69f184abcb9f4da9" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL CARLOS LANFRANCO LA HOZ</b><br>Distrito: PUENTE PIEDRA<br>Institución: MINSA</div>`)[0];
+                popup_a0edcb55277faa749d4d1092e672273b.setContent(html_f770aee24c799a1b69f184abcb9f4da9);
+            
+        
+
+        marker_e2f79274a7934644eaaa6bad1db30efe.bindPopup(popup_a0edcb55277faa749d4d1092e672273b)
+        ;
+
+        
+    
+    
+                marker_e2f79274a7934644eaaa6bad1db30efe.setIcon(icon_de96d00cfe6adf58fe2211110b513d19);
+            
+    
+            var marker_cd0164c4c8acbfb0c4a1af28ab940e83 = L.marker(
+                [-12.192758, -77.0037655],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_446b18afc528cc8a2d6e77ec0b8df838 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3d55bec10e5c4ce8bcc48495f9cedcd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75e292ed9fb90939df55abfa6c3d3e0e = $(`<div id="html_75e292ed9fb90939df55abfa6c3d3e0e" style="width: 100.0%; height: 100.0%;"><b>INSTITUTO NACIONAL DE REHABILITACION "DRA. ADRIANA REBAZA FLORES" AMISTAD PERU - JAPON</b><br>Distrito: CHORRILLOS<br>Institución: MINSA</div>`)[0];
+                popup_b3d55bec10e5c4ce8bcc48495f9cedcd.setContent(html_75e292ed9fb90939df55abfa6c3d3e0e);
+            
+        
+
+        marker_cd0164c4c8acbfb0c4a1af28ab940e83.bindPopup(popup_b3d55bec10e5c4ce8bcc48495f9cedcd)
+        ;
+
+        
+    
+    
+                marker_cd0164c4c8acbfb0c4a1af28ab940e83.setIcon(icon_446b18afc528cc8a2d6e77ec0b8df838);
+            
+    
+            var marker_73ce230b189e4bf447f721ab6633c5b0 = L.marker(
+                [-12.0399743, -76.9935755],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_aa43bddb9a086afd7b945db4f5d43fe8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d2b90363df1777eaaf130f278a52034 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e1dd6689df816ebdc3e9c66f15b76b0 = $(`<div id="html_2e1dd6689df816ebdc3e9c66f15b76b0" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL NACIONAL HIPOLITO UNANUE</b><br>Distrito: EL AGUSTINO<br>Institución: MINSA</div>`)[0];
+                popup_5d2b90363df1777eaaf130f278a52034.setContent(html_2e1dd6689df816ebdc3e9c66f15b76b0);
+            
+        
+
+        marker_73ce230b189e4bf447f721ab6633c5b0.bindPopup(popup_5d2b90363df1777eaaf130f278a52034)
+        ;
+
+        
+    
+    
+                marker_73ce230b189e4bf447f721ab6633c5b0.setIcon(icon_aa43bddb9a086afd7b945db4f5d43fe8);
+            
+    
+            var marker_009588c8fe3ddad1f3e21ca82e512517 = L.marker(
+                [-11.11552309, -77.60782172],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_19a2d28422bc02037eaf61ed2667f822 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a94fcb3573fb6cdc6e4345e0960248f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_731afa2a8bd79085ac70ca2bdb6986ae = $(`<div id="html_731afa2a8bd79085ac70ca2bdb6986ae" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL GENERAL DE HUACHO</b><br>Distrito: HUACHO<br>Institución: GOBIERNO REGIONAL</div>`)[0];
+                popup_7a94fcb3573fb6cdc6e4345e0960248f.setContent(html_731afa2a8bd79085ac70ca2bdb6986ae);
+            
+        
+
+        marker_009588c8fe3ddad1f3e21ca82e512517.bindPopup(popup_7a94fcb3573fb6cdc6e4345e0960248f)
+        ;
+
+        
+    
+    
+                marker_009588c8fe3ddad1f3e21ca82e512517.setIcon(icon_19a2d28422bc02037eaf61ed2667f822);
+            
+    
+            var marker_5e000c1a740f5bc2f81dfa083b029efb = L.marker(
+                [-13.076235, -76.385432],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_2a31158e70c0d20e1c0fb0063e90fe95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_249d5483b0ca4280afcfbd122e52ca86 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f9b12d73b45f190e6617c2b2b0239fa = $(`<div id="html_9f9b12d73b45f190e6617c2b2b0239fa" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL REZOLA</b><br>Distrito: SAN VICENTE DE CAÑETE<br>Institución: GOBIERNO REGIONAL</div>`)[0];
+                popup_249d5483b0ca4280afcfbd122e52ca86.setContent(html_9f9b12d73b45f190e6617c2b2b0239fa);
+            
+        
+
+        marker_5e000c1a740f5bc2f81dfa083b029efb.bindPopup(popup_249d5483b0ca4280afcfbd122e52ca86)
+        ;
+
+        
+    
+    
+                marker_5e000c1a740f5bc2f81dfa083b029efb.setIcon(icon_2a31158e70c0d20e1c0fb0063e90fe95);
+            
+    
+            var marker_9585d6f6ecdfb36c1025dd7faa902b87 = L.marker(
+                [-12.0468271, -76.9454975],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_bfa51a9dc30eaf9a5e9c38852b7c6692 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_742b2dead11f90360d772c9f31d50343 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb8e4bb08fb523076855ce48500e56a9 = $(`<div id="html_bb8e4bb08fb523076855ce48500e56a9" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL HERMILIO VALDIZAN</b><br>Distrito: SANTA ANITA<br>Institución: MINSA</div>`)[0];
+                popup_742b2dead11f90360d772c9f31d50343.setContent(html_bb8e4bb08fb523076855ce48500e56a9);
+            
+        
+
+        marker_9585d6f6ecdfb36c1025dd7faa902b87.bindPopup(popup_742b2dead11f90360d772c9f31d50343)
+        ;
+
+        
+    
+    
+                marker_9585d6f6ecdfb36c1025dd7faa902b87.setIcon(icon_bfa51a9dc30eaf9a5e9c38852b7c6692);
+            
+    
+            var marker_f1a2294d9d4fa5aa993ce44f561b22c8 = L.marker(
+                [-12.0659612, -77.0945832],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_879ec74e02ddc93874fcaf273fa915a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55f1e28f85dbd86709c1ba0d7cc6bbca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb76c7861632d211d4e32e030c5577c7 = $(`<div id="html_bb76c7861632d211d4e32e030c5577c7" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL I OCTAVIO MONGRUT MUÑOZ</b><br>Distrito: SAN MIGUEL<br>Institución: ESSALUD</div>`)[0];
+                popup_55f1e28f85dbd86709c1ba0d7cc6bbca.setContent(html_bb76c7861632d211d4e32e030c5577c7);
+            
+        
+
+        marker_f1a2294d9d4fa5aa993ce44f561b22c8.bindPopup(popup_55f1e28f85dbd86709c1ba0d7cc6bbca)
+        ;
+
+        
+    
+    
+                marker_f1a2294d9d4fa5aa993ce44f561b22c8.setIcon(icon_879ec74e02ddc93874fcaf273fa915a2);
+            
+    
+            var marker_2e46bfada88168f84f981f647c904f9b = L.marker(
+                [-11.9344473, -76.693699],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_d7f025be244c1e6f6e82190dbb110e85 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a06f6940074da2ced3f77c02a021da9c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_908edf2bdce53eaf6021ec2b1e7ce9d1 = $(`<div id="html_908edf2bdce53eaf6021ec2b1e7ce9d1" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL DE MEDIANA COMPLEJIDAD JOSE AGURTO TELLO</b><br>Distrito: LURIGANCHO<br>Institución: MINSA</div>`)[0];
+                popup_a06f6940074da2ced3f77c02a021da9c.setContent(html_908edf2bdce53eaf6021ec2b1e7ce9d1);
+            
+        
+
+        marker_2e46bfada88168f84f981f647c904f9b.bindPopup(popup_a06f6940074da2ced3f77c02a021da9c)
+        ;
+
+        
+    
+    
+                marker_2e46bfada88168f84f981f647c904f9b.setIcon(icon_d7f025be244c1e6f6e82190dbb110e85);
+            
+    
+            var marker_bf9cbff6b4884fa4b6716337b8977111 = L.marker(
+                [-11.9665774, -77.0030573],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_858354560e76464b736e9dde6358129a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_423792191456478ec305324a17f380e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d91a5b454d2130771e3c868b1aa9da72 = $(`<div id="html_d91a5b454d2130771e3c868b1aa9da72" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL SAN JUAN DE LURIGANCHO</b><br>Distrito: SAN JUAN DE LURIGANCHO<br>Institución: MINSA</div>`)[0];
+                popup_423792191456478ec305324a17f380e5.setContent(html_d91a5b454d2130771e3c868b1aa9da72);
+            
+        
+
+        marker_bf9cbff6b4884fa4b6716337b8977111.bindPopup(popup_423792191456478ec305324a17f380e5)
+        ;
+
+        
+    
+    
+                marker_bf9cbff6b4884fa4b6716337b8977111.setIcon(icon_858354560e76464b736e9dde6358129a);
+            
+    
+            var marker_30d26fea4e8237fcd080e84dcf9b1503 = L.marker(
+                [-10.79690607, -77.7172015],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_c96154d6b05a9f7a470e11f8a0dc5f45 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_266ae1b3cab0f6818534eb8d92ad96c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe38bd6b65b92279504f0dcbe9515be3 = $(`<div id="html_fe38bd6b65b92279504f0dcbe9515be3" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL DE SUPE LAURA ESTHER RODRIGUEZ DULANTO</b><br>Distrito: SUPE<br>Institución: GOBIERNO REGIONAL</div>`)[0];
+                popup_266ae1b3cab0f6818534eb8d92ad96c8.setContent(html_fe38bd6b65b92279504f0dcbe9515be3);
+            
+        
+
+        marker_30d26fea4e8237fcd080e84dcf9b1503.bindPopup(popup_266ae1b3cab0f6818534eb8d92ad96c8)
+        ;
+
+        
+    
+    
+                marker_30d26fea4e8237fcd080e84dcf9b1503.setIcon(icon_c96154d6b05a9f7a470e11f8a0dc5f45);
+            
+    
+            var marker_5066785fe7d5907d06e0e5d7ec255938 = L.marker(
+                [-12.0260421, -76.9199038],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_476091803b06123e4ee158c61f8dfde8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b72b235474c66547157fe6591f76a82 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29291352a00098510831d613159aaa34 = $(`<div id="html_29291352a00098510831d613159aaa34" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL VITARTE</b><br>Distrito: ATE<br>Institución: MINSA</div>`)[0];
+                popup_4b72b235474c66547157fe6591f76a82.setContent(html_29291352a00098510831d613159aaa34);
+            
+        
+
+        marker_5066785fe7d5907d06e0e5d7ec255938.bindPopup(popup_4b72b235474c66547157fe6591f76a82)
+        ;
+
+        
+    
+    
+                marker_5066785fe7d5907d06e0e5d7ec255938.setIcon(icon_476091803b06123e4ee158c61f8dfde8);
+            
+    
+            var marker_8eb1c9e9fb89ecb7af2048ee974e50d0 = L.marker(
+                [-12.0839746, -77.0611078],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_f8c9da69fec6e6a26c67a333eb300b84 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_19ab2d19cb1c9941165368e36b7792a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fced8326cb9c00b8319015f99274205f = $(`<div id="html_fced8326cb9c00b8319015f99274205f" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL NACIONAL POLICIA NACIONAL DEL PERU GRAL PNP LUIS N. SAENZ.</b><br>Distrito: JESUS MARIA<br>Institución: SANIDAD DE LA POLICIA NACIONAL DEL PERU</div>`)[0];
+                popup_19ab2d19cb1c9941165368e36b7792a4.setContent(html_fced8326cb9c00b8319015f99274205f);
+            
+        
+
+        marker_8eb1c9e9fb89ecb7af2048ee974e50d0.bindPopup(popup_19ab2d19cb1c9941165368e36b7792a4)
+        ;
+
+        
+    
+    
+                marker_8eb1c9e9fb89ecb7af2048ee974e50d0.setIcon(icon_f8c9da69fec6e6a26c67a333eb300b84);
+            
+    
+            var marker_1280a21d80d6951d1646ef1e8443aabe = L.marker(
+                [-12.0581708, -77.0217293],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_90c86b991f1248f38face6f145fdb692 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a6dbaff080719cf6970ad349ffd8c778 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8487a5bee1b236b3488a8b8df51e5d7c = $(`<div id="html_8487a5bee1b236b3488a8b8df51e5d7c" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL DE EMERGENCIAS PEDIATRICAS</b><br>Distrito: LA VICTORIA<br>Institución: MINSA</div>`)[0];
+                popup_a6dbaff080719cf6970ad349ffd8c778.setContent(html_8487a5bee1b236b3488a8b8df51e5d7c);
+            
+        
+
+        marker_1280a21d80d6951d1646ef1e8443aabe.bindPopup(popup_a6dbaff080719cf6970ad349ffd8c778)
+        ;
+
+        
+    
+    
+                marker_1280a21d80d6951d1646ef1e8443aabe.setIcon(icon_90c86b991f1248f38face6f145fdb692);
+            
+    
+            var marker_0147429c725f1d4619c7f1ce3fafa077 = L.marker(
+                [-11.56082038, -77.27058037],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_ec1cf92066449c13ddc979bd433331c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c39b502a0d7b7eba1e438eb69f475cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f55a6294cb5b6f4439ef4743fa6df09 = $(`<div id="html_4f55a6294cb5b6f4439ef4743fa6df09" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL CHANCAY Y SERVICIOS BASICOS DE SALUD</b><br>Distrito: CHANCAY<br>Institución: GOBIERNO REGIONAL</div>`)[0];
+                popup_7c39b502a0d7b7eba1e438eb69f475cb.setContent(html_4f55a6294cb5b6f4439ef4743fa6df09);
+            
+        
+
+        marker_0147429c725f1d4619c7f1ce3fafa077.bindPopup(popup_7c39b502a0d7b7eba1e438eb69f475cb)
+        ;
+
+        
+    
+    
+                marker_0147429c725f1d4619c7f1ce3fafa077.setIcon(icon_ec1cf92066449c13ddc979bd433331c9);
+            
+    
+            var marker_c12569cf90db2ad3103d58551dad1fe6 = L.marker(
+                [-12.0220216, -77.0544967],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_d78a2e314ccff1ca987c352ffdaaf0ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_caeee9f81f12a9165ab228a5b50644c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c06272d0e6fab5e8ecc555f035cadac = $(`<div id="html_5c06272d0e6fab5e8ecc555f035cadac" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL NACIONAL CAYETANO HEREDIA</b><br>Distrito: SAN MARTIN DE PORRES<br>Institución: MINSA</div>`)[0];
+                popup_caeee9f81f12a9165ab228a5b50644c5.setContent(html_5c06272d0e6fab5e8ecc555f035cadac);
+            
+        
+
+        marker_c12569cf90db2ad3103d58551dad1fe6.bindPopup(popup_caeee9f81f12a9165ab228a5b50644c5)
+        ;
+
+        
+    
+    
+                marker_c12569cf90db2ad3103d58551dad1fe6.setIcon(icon_d78a2e314ccff1ca987c352ffdaaf0ee);
+            
+    
+            var marker_51194d26fc01e4e30487d7a0d1dd084d = L.marker(
+                [-11.842977, -76.381897],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_0cac6fb04a3c89870aa7f2c4c999a4ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f01b285c121f9f9bb4452910479b510 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_283dd85d8125fd6542165035978a212b = $(`<div id="html_283dd85d8125fd6542165035978a212b" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL SAN JUAN DE MATUCANA</b><br>Distrito: MATUCANA<br>Institución: GOBIERNO REGIONAL</div>`)[0];
+                popup_4f01b285c121f9f9bb4452910479b510.setContent(html_283dd85d8125fd6542165035978a212b);
+            
+        
+
+        marker_51194d26fc01e4e30487d7a0d1dd084d.bindPopup(popup_4f01b285c121f9f9bb4452910479b510)
+        ;
+
+        
+    
+    
+                marker_51194d26fc01e4e30487d7a0d1dd084d.setIcon(icon_0cac6fb04a3c89870aa7f2c4c999a4ea);
+            
+    
+            var marker_eace155c6bcf76c85fa9375ed6c08768 = L.marker(
+                [-12.1282107, -77.0180619],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_1d29c59549d5b2b63d6b39eeadd7550a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83ee3eaaff462286dcd7d42901197fd8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ef114792bed9bb2a685c1646707b29a = $(`<div id="html_8ef114792bed9bb2a685c1646707b29a" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL DE EMERGENCIAS JOSE CASIMIRO ULLOA</b><br>Distrito: MIRAFLORES<br>Institución: MINSA</div>`)[0];
+                popup_83ee3eaaff462286dcd7d42901197fd8.setContent(html_8ef114792bed9bb2a685c1646707b29a);
+            
+        
+
+        marker_eace155c6bcf76c85fa9375ed6c08768.bindPopup(popup_83ee3eaaff462286dcd7d42901197fd8)
+        ;
+
+        
+    
+    
+                marker_eace155c6bcf76c85fa9375ed6c08768.setIcon(icon_1d29c59549d5b2b63d6b39eeadd7550a);
+            
+    
+            var marker_0701da2f87549cf449af353226fcffcc = L.marker(
+                [-12.0716016, -77.0610651],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_2415d5382cf07c5d13edc91c6c67fc3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_06996e86b9980655670c771c844c28e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8b221da3e4399ef8b62276029ae2185 = $(`<div id="html_b8b221da3e4399ef8b62276029ae2185" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL DE APOYO SANTA ROSA</b><br>Distrito: PUEBLO LIBRE<br>Institución: MINSA</div>`)[0];
+                popup_06996e86b9980655670c771c844c28e7.setContent(html_b8b221da3e4399ef8b62276029ae2185);
+            
+        
+
+        marker_0701da2f87549cf449af353226fcffcc.bindPopup(popup_06996e86b9980655670c771c844c28e7)
+        ;
+
+        
+    
+    
+                marker_0701da2f87549cf449af353226fcffcc.setIcon(icon_2415d5382cf07c5d13edc91c6c67fc3e);
+            
+    
+            var marker_4d35f3b2b7f891e1f3b6df2211999407 = L.marker(
+                [-12.2326004, -76.9336669],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_eb8c48a5506b6b926a1523be21f5d3ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_97dec1f1b9137f196451bc65a775771b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1317a54cee04c46d2c09b384c2ba04a = $(`<div id="html_f1317a54cee04c46d2c09b384c2ba04a" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL DE EMERGENCIAS VILLA EL SALVADOR</b><br>Distrito: VILLA EL SALVADOR<br>Institución: MINSA</div>`)[0];
+                popup_97dec1f1b9137f196451bc65a775771b.setContent(html_f1317a54cee04c46d2c09b384c2ba04a);
+            
+        
+
+        marker_4d35f3b2b7f891e1f3b6df2211999407.bindPopup(popup_97dec1f1b9137f196451bc65a775771b)
+        ;
+
+        
+    
+    
+                marker_4d35f3b2b7f891e1f3b6df2211999407.setIcon(icon_eb8c48a5506b6b926a1523be21f5d3ff);
+            
+    
+            var marker_eb35e1adf7594d9f605e0ed28cc9145b = L.marker(
+                [-12.0499179, -77.0423608],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_9d3667433f9feba2428f044ceb290591 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a231a77dade17c3790abb212af0825cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19d236a7940a063cdb5eabec72cf7413 = $(`<div id="html_19d236a7940a063cdb5eabec72cf7413" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL NACIONAL DOCENTE MADRE NIÑO SAN BARTOLOME</b><br>Distrito: LIMA<br>Institución: MINSA</div>`)[0];
+                popup_a231a77dade17c3790abb212af0825cb.setContent(html_19d236a7940a063cdb5eabec72cf7413);
+            
+        
+
+        marker_eb35e1adf7594d9f605e0ed28cc9145b.bindPopup(popup_a231a77dade17c3790abb212af0825cb)
+        ;
+
+        
+    
+    
+                marker_eb35e1adf7594d9f605e0ed28cc9145b.setIcon(icon_9d3667433f9feba2428f044ceb290591);
+            
+    
+            var marker_deebc9d55e11f33b63c30e819a78da2d = L.marker(
+                [-12.1601295, -77.0189409],
+                {
+}
+            ).addTo(marker_cluster_13374a5f37164c3ce3dc923a453e76f4);
+        
+    
+            var icon_7c16e8d505c93a7c28be5d0e338102b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a499c1ea885ea29b367bfa6190fc8b8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd3baad3bb4cb53aefd88683ccda0de5 = $(`<div id="html_dd3baad3bb4cb53aefd88683ccda0de5" style="width: 100.0%; height: 100.0%;"><b>EJERCITO PERUANO</b><br>Distrito: CHORRILLOS<br>Institución: SANIDAD DEL EJERCITO DEL PERU</div>`)[0];
+                popup_5a499c1ea885ea29b367bfa6190fc8b8.setContent(html_dd3baad3bb4cb53aefd88683ccda0de5);
+            
+        
+
+        marker_deebc9d55e11f33b63c30e819a78da2d.bindPopup(popup_5a499c1ea885ea29b367bfa6190fc8b8)
+        ;
+
+        
+    
+    
+                marker_deebc9d55e11f33b63c30e819a78da2d.setIcon(icon_7c16e8d505c93a7c28be5d0e338102b4);
+            
+    
+            marker_cluster_13374a5f37164c3ce3dc923a453e76f4.addTo(map_63d735a55c33f96d07cb2b6af21b2c9b);
+        
+    
+            var layer_control_1013172c8eebc7f4dc3e99b247d4d4f1_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_3e5420b873a68a39d9a0b73674e16709,
+                },
+                overlays :  {
+                    "Hospitales LIMA" : marker_cluster_13374a5f37164c3ce3dc923a453e76f4,
+                },
+            };
+            let layer_control_1013172c8eebc7f4dc3e99b247d4d4f1 = L.control.layers(
+                layer_control_1013172c8eebc7f4dc3e99b247d4d4f1_layers.base_layers,
+                layer_control_1013172c8eebc7f4dc3e99b247d4d4f1_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_63d735a55c33f96d07cb2b6af21b2c9b);
+
+        
+</script>
+</html>

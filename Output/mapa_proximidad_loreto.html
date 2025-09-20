@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2b5d46c0f1a82b792608f37c31b43441 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2b5d46c0f1a82b792608f37c31b43441" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2b5d46c0f1a82b792608f37c31b43441 = L.map(
+                "map_2b5d46c0f1a82b792608f37c31b43441",
+                {
+                    center: [-4.484459691666667, -73.74843997833334],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_41aa7f122577bf5f9396f5f83b1d42eb = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_41aa7f122577bf5f9396f5f83b1d42eb.addTo(map_2b5d46c0f1a82b792608f37c31b43441);
+        
+    
+            var circle_616c55877c641f125213bd35c9bc5034 = L.circle(
+                [-3.90854887, -70.51701259],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 2}
+            ).addTo(map_2b5d46c0f1a82b792608f37c31b43441);
+        
+    
+        var popup_e79c943210d910655c755de0834763dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2617c2422864a02847c89d6c12d9b69f = $(`<div id="html_2617c2422864a02847c89d6c12d9b69f" style="width: 100.0%; height: 100.0%;"><b>Zona Aislada</b><br>Distrito: RAMON CASTILLA<br>Hospitales en 10km: 1</div>`)[0];
+                popup_e79c943210d910655c755de0834763dd.setContent(html_2617c2422864a02847c89d6c12d9b69f);
+            
+        
+
+        circle_616c55877c641f125213bd35c9bc5034.bindPopup(popup_e79c943210d910655c755de0834763dd)
+        ;
+
+        
+    
+    
+            var circle_b9879ae6426c063e93039c6f574cae84 = L.circle(
+                [-3.762818, -73.253653],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 2}
+            ).addTo(map_2b5d46c0f1a82b792608f37c31b43441);
+        
+    
+        var popup_a6e6961bc7ade9187f031f3bcd44c8b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9242393babf7ff1cc77f39ce869879e7 = $(`<div id="html_9242393babf7ff1cc77f39ce869879e7" style="width: 100.0%; height: 100.0%;"><b>Zona Concentrada</b><br>Distrito: IQUITOS<br>Hospitales en 10km: 3</div>`)[0];
+                popup_a6e6961bc7ade9187f031f3bcd44c8b6.setContent(html_9242393babf7ff1cc77f39ce869879e7);
+            
+        
+
+        circle_b9879ae6426c063e93039c6f574cae84.bindPopup(popup_a6e6961bc7ade9187f031f3bcd44c8b6)
+        ;
+
+        
+    
+    
+            var marker_21f588ea98bda1e733dca39fa039d5e4 = L.marker(
+                [-3.90854887, -70.51701259],
+                {
+}
+            ).addTo(map_2b5d46c0f1a82b792608f37c31b43441);
+        
+    
+            var icon_3de9d4641d30bdcbae235f543d7c4e4a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a03ed3089f7940a85a12da4965f06bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e950ae45bcfa29dce39688da2b46b84 = $(`<div id="html_6e950ae45bcfa29dce39688da2b46b84" style="width: 100.0%; height: 100.0%;"><b>Zona Aislada</b><br>RAMON CASTILLA</div>`)[0];
+                popup_5a03ed3089f7940a85a12da4965f06bb.setContent(html_6e950ae45bcfa29dce39688da2b46b84);
+            
+        
+
+        marker_21f588ea98bda1e733dca39fa039d5e4.bindPopup(popup_5a03ed3089f7940a85a12da4965f06bb)
+        ;
+
+        
+    
+    
+                marker_21f588ea98bda1e733dca39fa039d5e4.setIcon(icon_3de9d4641d30bdcbae235f543d7c4e4a);
+            
+    
+            var marker_a6aee0f8f7f78ba7e969d6363ed1cb43 = L.marker(
+                [-3.762818, -73.253653],
+                {
+}
+            ).addTo(map_2b5d46c0f1a82b792608f37c31b43441);
+        
+    
+            var icon_a6713a8d3cd07d8d55aecbdc4909d41a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_742d3faf60cfadba014943350c5003a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbb4822b2adb432075f2145c71043f2b = $(`<div id="html_cbb4822b2adb432075f2145c71043f2b" style="width: 100.0%; height: 100.0%;"><b>Zona Concentrada</b><br>IQUITOS</div>`)[0];
+                popup_742d3faf60cfadba014943350c5003a4.setContent(html_cbb4822b2adb432075f2145c71043f2b);
+            
+        
+
+        marker_a6aee0f8f7f78ba7e969d6363ed1cb43.bindPopup(popup_742d3faf60cfadba014943350c5003a4)
+        ;
+
+        
+    
+    
+                marker_a6aee0f8f7f78ba7e969d6363ed1cb43.setIcon(icon_a6713a8d3cd07d8d55aecbdc4909d41a);
+            
+    
+            var marker_cluster_53a593b9b6b1509c253e74d0bc0f6020 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_89f0d814adc8131f0534f056da7908a0 = L.marker(
+                [-5.89606, -76.11616333],
+                {
+}
+            ).addTo(marker_cluster_53a593b9b6b1509c253e74d0bc0f6020);
+        
+    
+            var icon_b7ad9485a03c567c5e84ffa3b95c1872 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_764b4eb5ffb101b083d846f90c7634a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a55352aa6593bb966fa08edb2bde5e26 = $(`<div id="html_a55352aa6593bb966fa08edb2bde5e26" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL I YURIMAGUAS</b><br>Distrito: YURIMAGUAS<br>Institución: ESSALUD</div>`)[0];
+                popup_764b4eb5ffb101b083d846f90c7634a6.setContent(html_a55352aa6593bb966fa08edb2bde5e26);
+            
+        
+
+        marker_89f0d814adc8131f0534f056da7908a0.bindPopup(popup_764b4eb5ffb101b083d846f90c7634a6)
+        ;
+
+        
+    
+    
+                marker_89f0d814adc8131f0534f056da7908a0.setIcon(icon_b7ad9485a03c567c5e84ffa3b95c1872);
+            
+    
+            var marker_690df79b81881dc855e8a237bb69656c = L.marker(
+                [-3.762818, -73.253653],
+                {
+}
+            ).addTo(marker_cluster_53a593b9b6b1509c253e74d0bc0f6020);
+        
+    
+            var icon_8145d1b2c078a79d68139a55c84e2a90 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_76687ec74c1f718be281ad452ac3f7be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d137877635afe0b95e4ff604b7664dbb = $(`<div id="html_d137877635afe0b95e4ff604b7664dbb" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL IQUITOS "CESAR GARAYAR GARCIA"</b><br>Distrito: IQUITOS<br>Institución: GOBIERNO REGIONAL</div>`)[0];
+                popup_76687ec74c1f718be281ad452ac3f7be.setContent(html_d137877635afe0b95e4ff604b7664dbb);
+            
+        
+
+        marker_690df79b81881dc855e8a237bb69656c.bindPopup(popup_76687ec74c1f718be281ad452ac3f7be)
+        ;
+
+        
+    
+    
+                marker_690df79b81881dc855e8a237bb69656c.setIcon(icon_8145d1b2c078a79d68139a55c84e2a90);
+            
+    
+            var marker_3a2886db1d893ea9f13344f4a6c09557 = L.marker(
+                [-3.90854887, -70.51701259],
+                {
+}
+            ).addTo(marker_cluster_53a593b9b6b1509c253e74d0bc0f6020);
+        
+    
+            var icon_15c39ff0fa4ebba35bb6ab02bb6c3e25 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d57d1568e67469cb78e192d823ae855 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf20617c1d77038723e422023e9ebdb4 = $(`<div id="html_cf20617c1d77038723e422023e9ebdb4" style="width: 100.0%; height: 100.0%;"><b>CENTRO DE ATENCION PRIMARIA II CABALLOCOCHA</b><br>Distrito: RAMON CASTILLA<br>Institución: ESSALUD</div>`)[0];
+                popup_8d57d1568e67469cb78e192d823ae855.setContent(html_cf20617c1d77038723e422023e9ebdb4);
+            
+        
+
+        marker_3a2886db1d893ea9f13344f4a6c09557.bindPopup(popup_8d57d1568e67469cb78e192d823ae855)
+        ;
+
+        
+    
+    
+                marker_3a2886db1d893ea9f13344f4a6c09557.setIcon(icon_15c39ff0fa4ebba35bb6ab02bb6c3e25);
+            
+    
+            var marker_1a8d69253af9c3d7e67c83c5483f85c1 = L.marker(
+                [-3.7188408, -73.2439423],
+                {
+}
+            ).addTo(marker_cluster_53a593b9b6b1509c253e74d0bc0f6020);
+        
+    
+            var icon_4bed2849725661c031a5d8b333fbf809 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c239fbc27edb52cc6ba0e10ec9ab7adf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ca1a8845e09457dc72095fde52dbdca = $(`<div id="html_1ca1a8845e09457dc72095fde52dbdca" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL III IQUITOS</b><br>Distrito: PUNCHANA<br>Institución: ESSALUD</div>`)[0];
+                popup_c239fbc27edb52cc6ba0e10ec9ab7adf.setContent(html_1ca1a8845e09457dc72095fde52dbdca);
+            
+        
+
+        marker_1a8d69253af9c3d7e67c83c5483f85c1.bindPopup(popup_c239fbc27edb52cc6ba0e10ec9ab7adf)
+        ;
+
+        
+    
+    
+                marker_1a8d69253af9c3d7e67c83c5483f85c1.setIcon(icon_4bed2849725661c031a5d8b333fbf809);
+            
+    
+            var marker_66f79d019c2b38ccd161ed192d1f2a01 = L.marker(
+                [-3.72696048, -73.25341698],
+                {
+}
+            ).addTo(marker_cluster_53a593b9b6b1509c253e74d0bc0f6020);
+        
+    
+            var icon_1f82f9600d5a56515a0b55e236a64def = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b86e31be54d3f9febad76b0a83501add = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52ec775ef41b1ad9eb563edaf7ad8aab = $(`<div id="html_52ec775ef41b1ad9eb563edaf7ad8aab" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL REGIONAL DE LORETO "FELIPE SANTIAGO ARRIOLA IGLESIAS"</b><br>Distrito: PUNCHANA<br>Institución: GOBIERNO REGIONAL</div>`)[0];
+                popup_b86e31be54d3f9febad76b0a83501add.setContent(html_52ec775ef41b1ad9eb563edaf7ad8aab);
+            
+        
+
+        marker_66f79d019c2b38ccd161ed192d1f2a01.bindPopup(popup_b86e31be54d3f9febad76b0a83501add)
+        ;
+
+        
+    
+    
+                marker_66f79d019c2b38ccd161ed192d1f2a01.setIcon(icon_1f82f9600d5a56515a0b55e236a64def);
+            
+    
+            var marker_7a69296d8f0cae760a0750f24658266b = L.marker(
+                [-5.89353, -76.10645167],
+                {
+}
+            ).addTo(marker_cluster_53a593b9b6b1509c253e74d0bc0f6020);
+        
+    
+            var icon_21b429a712db52d106b8770d58060297 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_246e9e17900418368652cc89da071cdb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec6ea0d745ab8ad03d028e3f34ead3e9 = $(`<div id="html_ec6ea0d745ab8ad03d028e3f34ead3e9" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL SANTA GEMA DE  YURIMAGUAS</b><br>Distrito: YURIMAGUAS<br>Institución: GOBIERNO REGIONAL</div>`)[0];
+                popup_246e9e17900418368652cc89da071cdb.setContent(html_ec6ea0d745ab8ad03d028e3f34ead3e9);
+            
+        
+
+        marker_7a69296d8f0cae760a0750f24658266b.bindPopup(popup_246e9e17900418368652cc89da071cdb)
+        ;
+
+        
+    
+    
+                marker_7a69296d8f0cae760a0750f24658266b.setIcon(icon_21b429a712db52d106b8770d58060297);
+            
+    
+            marker_cluster_53a593b9b6b1509c253e74d0bc0f6020.addTo(map_2b5d46c0f1a82b792608f37c31b43441);
+        
+    
+            var layer_control_bee85470ab368ebe3598090e67987234_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_41aa7f122577bf5f9396f5f83b1d42eb,
+                },
+                overlays :  {
+                    "Hospitales LORETO" : marker_cluster_53a593b9b6b1509c253e74d0bc0f6020,
+                },
+            };
+            let layer_control_bee85470ab368ebe3598090e67987234 = L.control.layers(
+                layer_control_bee85470ab368ebe3598090e67987234_layers.base_layers,
+                layer_control_bee85470ab368ebe3598090e67987234_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_2b5d46c0f1a82b792608f37c31b43441);
+
+        
+</script>
+</html>
