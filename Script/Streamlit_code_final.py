@@ -67,7 +67,7 @@ def show_image_safe(image_path, caption="", width=None):
         if width:
             st.image(image_path, caption=caption, width=width)
         else:
-            st.image(image_path, caption=caption, use_column_width=True)
+            st.image(image_path, caption=caption, use_container_width=True)
     else:
         st.warning(f"⚠️ Imagen no encontrada: {os.path.basename(image_path)}")
 
@@ -76,7 +76,7 @@ def show_image_safe(image_path, caption="", width=None):
 # =============================================================================
 
 ## Cargar datos principales si existen
-csv_path = os.path.join(OUTPUT_PATH, "hospitales_procesados.csv")
+csv_path = os.path.join(OUTPUT_PATH, "Resumen_Hospitales.csv")
 hospitals_df = load_csv_safe(csv_path)
 
 dept_summary_path = os.path.join(OUTPUT_PATH, "resumen_departamentos.csv")
@@ -215,6 +215,8 @@ with tab1:
             plt.tight_layout()
             map10_path = os.path.join(OUTPUT_PATH, "top10_departamentos.png")
             show_image_safe(map10_path, "Top 10 departamentos con mayor concentración hospitalaria")
+
+            
         
         with col2:
             st.markdown("**📊 Estadísticas:**")
